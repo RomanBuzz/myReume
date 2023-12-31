@@ -34,3 +34,13 @@ window.addEventListener("scroll", function (event) {
     upwardButton.style = "null";
   }
 });
+
+window.addEventListener("load", function (event) {
+  let upwardButton = document.querySelector(".upward__button");
+  let posTop = window.pageYOffset;
+  if (posTop < 80) {
+    upwardButton.style.display = "none";
+  } else {
+    upwardButton.style = "null";
+  }
+});
