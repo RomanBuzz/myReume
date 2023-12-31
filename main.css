@@ -1,0 +1,419 @@
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    perspective: unset !important;
+    -webkit-perspective: unset !important
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "PT Sans", Arial, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color .5s
+}
+
+a:hover {
+    color: #24a3f1;
+    text-decoration: underline
+}
+
+header {
+    height: 74px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+}
+
+header .flexbox {
+    width: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    margin: 0 auto
+}
+
+.logo {
+    display: inline-block;
+    width: 40px;
+    height: 45px;
+    background: url("media/logo-resume.svg") transparent no-repeat 0 0;
+    background-size: contain;
+    margin: 0;
+}
+
+.upward__button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: url("media/upward_button.svg") transparent no-repeat 0 0;
+    background-size: contain;
+    margin: 0;
+    position: fixed;
+    right: 3px;
+    bottom: 15px;
+}
+
+.noscript {
+    display: inline-block;
+    color: red;
+    text-align: center;
+    background-color: #d0d0d07e;
+    width: auto;
+    height: auto;
+    margin: 0;
+    position: fixed;
+    right: 45px;
+    bottom: 5px;
+}
+
+.page__title {
+    font-weight: bold;
+    font-size: 30px;
+    padding-bottom: 3px;
+    line-height: 74px;
+    display: inline-block
+}
+
+.menu {
+    flex-shrink: 0;
+    display: flex;
+    margin: 0
+}
+
+.menu__link {
+    text-decoration: none !important;
+    font-weight: bold
+}
+
+.menu__link.active {
+    color: #24a3f1;
+    border-bottom: 3px #24a3f1 solid
+}
+
+.menu__top {
+    padding-bottom: 3px;
+    line-height: 74px;
+    display: inline-block;
+    margin-left: 30px
+}
+
+section.block.content {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: left;
+    padding: 40px
+}
+
+section.content .flex {
+    display: flex;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left
+}
+
+section.content .column {
+    flex: 1
+}
+
+section.content .column--left {
+    flex-basis: 70%
+}
+
+section.content .column--right {
+    flex-basis: 30%
+}
+
+section.content .head {
+    position: relative;
+    padding-left: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 120px
+}
+
+section.content .head__photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    position: absolute;
+    margin-left: -150px;
+    border: 1px solid #d0d0d0;
+    overflow: hidden;
+    background-size: 75%
+}
+
+.photo {
+    height: 118px;
+    margin-top: 0px;
+    margin-left: -30px;
+}
+
+section.content .head__name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 26px;
+    flex-shrink: 0;
+    padding-bottom: 10px;
+    text-transform: capitalize
+}
+
+section.content .head__position {
+    font-weight: bold;
+    color: #5c7c94;
+    flex-basis: 100%;
+    font-size: 16px
+}
+
+section.content .head__geo {
+    flex-shrink: 0;
+    margin-bottom: 4px;
+    color: #666;
+    padding-left: 24px;
+    background: url("media/place.svg") transparent no-repeat 0 0;
+    background-size: 20px 20px;
+    font-size: 14px;
+    line-height: 14px;
+    min-height: 20px;
+    display: flex;
+    align-items: center
+}
+
+section.content .title {
+    font-weight: bold;
+    margin-top: 30px;
+    line-height: 26px;
+    background-size: 24px 24px;
+    padding-left: 32px;
+    font-size: 16px
+}
+
+section.content .title--personal {
+    background: url("media/person.svg") transparent no-repeat 0 0
+}
+
+section.content .title--expirience {
+    background: url("media/work.svg") transparent no-repeat 0 0
+}
+
+section.content .title--education {
+    background: url("media/education.svg") transparent no-repeat 0 0
+}
+
+section.content .title--traning {
+    background: url("media/traning.svg") transparent no-repeat 0 0
+}
+
+section.content .title--info {
+    background: url("media/info.svg") transparent no-repeat 0 0
+}
+
+section.content .title--salary {
+    background: url("media/salary.svg") transparent no-repeat 0 0
+}
+
+section.content .title--contacts {
+    background: url("media/contacts.svg") transparent no-repeat 0 0
+}
+
+section.content .title--lang {
+    background: url("media/lang.svg") transparent no-repeat 0 0
+}
+
+section.content .title--skills {
+    background: url("media/skills.svg") transparent no-repeat 0 0
+}
+
+section.content .group {
+    margin-left: 12px;
+    padding-left: 20px;
+    border-left: 1px solid #d0d0d0;
+    margin-top: 10px
+}
+
+section.content .group p {
+    margin-top: 3px;
+    margin-bottom: 3px
+}
+
+section.content .group p b {
+    display: inline-block;
+    padding-right: 4px;
+    font-weight: normal;
+    color: #757575
+}
+
+section.content .group li {
+    margin: 8px 0
+}
+
+section.content .group li:last-of-type {
+    margin-bottom: 0
+}
+
+section.content .expirience__position {
+    font-size: 16px;
+    line-height: 20px
+}
+
+section.content .expirience__company {
+    margin-top: 4px
+}
+
+section.content .expirience__period {
+    margin-top: 3px;
+    color: #5c7c94
+}
+
+section.content .expirience__details {
+    padding-top: 6px;
+    margin-top: 2px
+}
+
+section.content .education__school {
+    font-size: 16px;
+    line-height: 20px
+}
+
+section.content .education__class {
+    margin-top: 4px
+}
+
+section.content .education__year {
+    margin-top: 3px;
+    color: #5c7c94
+}
+
+section.content .details {
+    margin-bottom: 20px
+}
+
+section.content .details__email {
+    color: #5c7c94
+}
+
+section.content .salary {
+    margin-bottom: 20px
+}
+
+section.content .salary__amount {
+    color: #5c7c94
+}
+
+section.content .salary__tick {
+    padding-left: 30px;
+    background: url("media/done.svg") transparent no-repeat 0 0;
+    margin-bottom: 10px
+}
+
+section.content .skills p {
+    padding-left: 30px;
+    background: url("media/done.svg") transparent no-repeat 0 0;
+    margin-bottom: 10px
+}
+
+@media print {
+    section.content {
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        margin-bottom: 0 !important;
+        margin-top: 0 !important;
+        padding: 0 !important
+    }
+}
+
+@media (width > 799px) {
+    .menu__top.first {
+        margin-left: 0
+    }
+}
+
+@media (width < 800px) {
+    header .flexbox {
+        justify-content: left;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        margin-right: 3px;
+    }
+
+    .menu__top {
+        line-height: normal;
+    }
+}
+
+@media (width < 530px) {
+    section.content .head {
+        padding-left: 0px;
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    section.content .head__photo {
+        margin-left: 0px;
+        margin-top: -150px;
+    }
+
+    section.content .column--left {
+        flex-basis: 50%
+    }
+
+    section.content .column--right {
+        flex-basis: 50%
+    }
+}
+
+@media (width < 430px) {
+    section.content .flex {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: left
+    }
+
+    .menu__button {
+        display: inline-block;
+        width: 35px;
+        height: 40px;
+        background: url("media/menu.svg") transparent no-repeat 0 0;
+        background-size: contain;
+        position: absolute;
+        right: 0px;
+        margin-right: 3px;
+    }
+
+    .menu__button:hover {
+        background-color: #d0d0d038;
+    }
+
+    .menu {
+        display: none;
+    }
+}
